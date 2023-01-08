@@ -114,6 +114,10 @@ body{
     margin-top: 8px;
 }
 
+main{
+    padding-bottom: 40px;
+}
+
 .section + .section{
     margin-top: 16px;
 }
