@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --white: white;
+    --blue: #0C3860;
+    --black: #3B3B3B;
+
+    --text-sm: 16px;
+    --text-md: 18px;
+    --text-lg: 24px;
+    --text-xl: 28px;
+
+}
+
+body{
+    color: var(--black);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.header{
+    padding: 24px 0;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.header a{
+    font-size: var(--text-sm);
+    color: var(--white);
+    display: block;
+}
+.header a + a{
+    margin-top: 8px;
+}
+
+.name{
+    font-size: var(--text-xl);
+}
+
+.role{
+    font-size: var(--text-md);
+    line-height: 1.4;
+    margin-top: 8px;
+}
+
+.section + .section{
+    margin-top: 16px;
+}
+
+.section__title{
+    font-size: var(--text-lg);
+    color: var(--blue);
+    /* text-decoration: underline; */
+}
+
+.section__title::after{
+    content: '';
+    display: block;
+    width: 100%;
+    margin-top: 2px;
+    height: 2px;
+    background-color: var(--blue);
+    border-radius: 12px;
+}
+
+.section__content,.section__highlights,.section__info{
+    font-size: var(--text-md);
+    line-height: 1.4;
+    color: var(--black);
+}
+
+.section__content--list{
+ list-style-type: disc;
+ padding-left: 20px;
+ word-break: break-word;
+}
+
+.section__content--list li:not(:last-child){
+    margin-top: 8px;
+    line-height: 1.4;
+} 
+
+.section__highlights{
+    font-weight: bold;
+}
+
+.section__info{
+    font-size: var(--text-sm);
+}
+
+.tgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tgroup h3{
+    font-size: var(--text-md);
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.tgroup span{
+    font-size: var(--text-sm);
+    color: var(--black);
+}
+
+.tgroup--primary h3{
+    color: var(--blue);
+}
+
+.tgroup--secondary h3{
+    color: var(--black);
+}
+
+.mt-1{
+    margin-top: 8px !important;
+}
+
+.mt-2{
+    margin-top: 16px !important;
+}
+
+.mt-3{
+    margin-top: 24px !important;
+}
+
+.mb-1{
+    margin-bottom: 8px !important;
+}
+
+.mb-2{
+    margin-bottom: 16px !important;
+}
+
+.mb-3{
+    margin-bottom: 24px !important;
+}
+
+.cursor-text{
+    cursor: text;
+    user-select: text;
+}
+
+
+@media (max-width: 768px){
+    .container{
+        margin: 0 20px;
+    }
+    .md\:mt-1{
+        margin-top: 8px !important;
+    }
+    
+    .md\:mt-2{
+        margin-top: 16px !important;
+    }
+    
+    .md\:mt-3{
+        margin-top: 24px !important;
+    }
+    
+    .md\:mb-1{
+        margin-bottom: 8px !important;
+    }
+    
+    .md\:mb-2{
+        margin-bottom: 16px !important;
+    }
+    
+    .md\:mb-3{
+        margin-bottom: 24px !important;
+    }
+
+    .tgroup > *{
+        width: 50%;
+    }
+
+    .tgroup span{
+        text-align: right;
+    }
+}
