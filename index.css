@@ -139,6 +139,10 @@ a {
     color: #50acfd;
 }
 
+b {
+    font-weight: 600;
+}
+
 html {
     box-sizing: border-box;
 }
