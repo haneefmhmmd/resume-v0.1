@@ -1,4 +1,4 @@
-# Web Resume
+# Web Resume (v0.1)
 
 This is my resume which contains detailed information about my working experience, education and my skill-set
 
