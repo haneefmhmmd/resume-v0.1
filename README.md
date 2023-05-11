@@ -1,25 +1,20 @@
 # Web Resume
 
-This is a web resume built using HTML, CSS, SCSS, and React.js. The sections of the resume include skills, experience, education, projects, and contact information.
-
-## Getting Started
-
-To start the project, run `npm run start`. To build the project in production mode, run `npm run build`. When running `npm run start`, the app will open automatically on `localhost:3000`.
+This is my resume which contains detailed information about my working experience, education and my skill-set
 
 ## Technologies Used
 
 - HTML
 - CSS
 - SCSS
-- React.js
 
 ## Hosting
 
-This project is hosted on [GitHub Pages](https://haneefmuhammad.github.io/resume/).
+This project is hosted on [GitHub Pages](https://haneefmhmmd.github.io/resume-v0.1/).
 
 ## Design
 
-The website design has been created by me using Figma. I have utilized a modern and minimalistic design approach to showcase my resume in an aesthetically pleasing way. The design has been optimized for desktop and mobile devices to provide a seamless user experience.
+The website design has been created by me, taking inspiration from some of the popular designs used in modern resume builders. The design is modern and minimalistic, optimized for desktop and mobile devices to provide a seamless user experience
 
 ## Author
 
